@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>JUnit Renderer - demo by jrclarkin</title>
+
+  <link rel="stylesheet" type="text/css" href="http://static.jstree.com/3.0.0/assets/dist/themes/default/style.min.css"></link>
+  <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"></link>
+  <link rel="stylesheet" type="text/css" href="style.css"></link>
+
+  <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="http://static.jstree.com/3.0.0/assets/dist/jstree.min.js"></script>
+  <script src="main.js"></script>
+
+</head>
+
+<body>
+  <div class="container" id="uploader">
+    <h1>xUnit Results</h1>
+    <div class="row">&nbsp;
+    </div>
+    <div class="row">
+      <label>Please select an XML xUnit Report for analysis</label>
+      <input type="file" id="upload-input">
+    </div>
+  </div>
+
+
+  <div class="container" id="results">
+    <h1>xUnit Results</h1>
+    <div class="row">
+      <div id="filterButtons">
+        <div class="col-sm-9">
+          <button type="button" class="btn btn-danger" id="btnError">
+            <span class="glyphicon glyphicon-fire"></span>&nbsp;Errors</button>
+          <button type="button" class="btn btn-primary" id="btnFailure">
+            <span class="glyphicon glyphicon-zoom-in"></span>&nbsp;Failures</button>
+          <button type="button" class="btn btn-warning" id="btnSkipped">
+            <span class="glyphicon glyphicon-pause"></span>&nbsp;Skipped</button>
+          <button type="button" class="btn btn-success" id="btnPass">
+            <span class="glyphicon glyphicon-ok"></span>&nbsp;Passes</button>
+        </div>
+      </div>
+
+      <div class="col-sm-3 input-group">
+        <input type="text" id="tree-search" class="form-control" placeholder="search..." id="query" name="query" value="">
+        <div class="input-group-btn">
+          <button type="submit" class="btn btn-default" id="btnSearch">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">&nbsp;</div>
+    <div id="tree-row">
+      <div class="row" id="tree-expandcollapse">
+        <div class="col-sm-8">
+
+          <a href="" id="linkExpand">Expand All</a>&nbsp;|
+          <a href="" id="linkCollapse">Collapse All</a>
+        </div>
+        <div class="col-sm-4 totals"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12" id="jtree"></div>
+      </div>
+    </div>
+
+    <div class="row" id="progress-row">
+      <div class="col-sm-12">
+        Please wait while the tree is rendering...
+        <br/>
+        <div class="progress progress-striped active">
+          <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container testcase-details">
+    <div class="row">
+      <label class="col-sm-1 control-label">Name</label>
+      <div class="col-sm-9 name">initializationError</div>
+      <div class="col-sm-2 status bg-primary"></div>
+    </div>
+
+    <div class="row">
+      <label class="col-sm-1 control-label">Classname</label>
+      <div class="col-sm-11 classname">com.mxi.mx.contractmgmt.api.customer.AbstractCustomerApiTest</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 message">
+        <label class="control-label">Message</label>
+        <br />
+        <textarea rows="5" class="form-control message" spellcheck="false$('#input').get(0).files[0];"></textarea>
+      </div>
+    </div>
+    <div class="row">&nbsp;</div>
+  </div>
+
+</body>
+
+</html>

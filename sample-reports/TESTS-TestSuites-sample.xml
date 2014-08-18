@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite tests="3">
+    <testcase classname="foo" name="ASuccessfulTest" />
+    <testcase classname="foo" name="AnotherSuccessfulTest" />
+    <testcase classname="foo" name="AFailingTest">
+      <failure type="NotEnoughFoo">details about failure</failure>
+    </testcase>
+    <testcase classname="foo.man.chu" name="AnErrorTest">
+      <error type="NotEnoughFoo">details about the error</error>
+    </testcase>
+    <testcase classname="foo.does.skip" name="ASkippedTest">
+      <skipped />
+    </testcase>
+    <testcase classname="foo.does.skip" name="ASuccessfulTest" />
+  </testsuite>
+</testsuites>

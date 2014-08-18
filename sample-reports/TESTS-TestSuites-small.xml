@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="MACNBPW.local" id="0" name="CategoryControllerTests" package="" tests="1" time="0.608" timestamp="2009-05-28T13:23:14">
+      <properties />
+
+      <testcase classname="CategoryControllerTests" name="testSomething" time="0.608" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="MACNBPW.local" id="1" name="TodoControllerTests" package="" tests="1" time="0.019" timestamp="2009-05-28T13:23:15">
+      <properties />
+
+      <testcase classname="TodoControllerTests" name="testSomething" time="0.019" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="MACNBPW.local" id="2" name="TodoIntegrationTests" package="" tests="1" time="1.236" timestamp="2009-05-28T13:23:29">
+      <properties />
+
+      <testcase classname="TodoIntegrationTests" name="testPersist" time="1.172" />
+
+      <system-out><![CDATA[--Output from testPersist--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testPersist--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="MACNBPW.local" id="3" name="TodoTests" package="" tests="1" time="0.0090" timestamp="2009-05-28T13:23:15">
+      <properties />
+
+      <testcase classname="TodoTests" name="testToString" time="0.0090" />
+
+      <system-out><![CDATA[--Output from testToString--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testToString--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="MACNBPW.local" id="4" name="UserControllerTests" package="" tests="3" time="0.261" timestamp="2009-05-28T13:23:31">
+      <properties />
+
+      <testcase classname="UserControllerTests" name="testHandleLogin" time="0.153" />
+
+      <testcase classname="UserControllerTests" name="testHandleLoginInvalidUser" time="0.041" />
+
+      <testcase classname="UserControllerTests" name="testLogout" time="0.029" />
+
+      <system-out><![CDATA[--Output from testHandleLogin--
+--Output from testHandleLoginInvalidUser--
+--Output from testLogout--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testHandleLogin--
+--Output from testHandleLoginInvalidUser--
+--Output from testLogout--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

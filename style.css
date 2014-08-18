@@ -1,0 +1,50 @@
+html {
+    overflow-y: scroll; 
+}
+.hide {
+    display:none;
+}
+.link {
+  font-weight: bold;
+}
+.error {
+ color: red; 
+}
+.failure {
+  color: purple;
+}
+.pass {
+  color: green;
+} 
+.skipped {
+  color: orange;
+}
+
+#filterButtons button:after {
+  content: ": off";
+}
+#filterButtons button.active:after {
+  content: ": on";
+}
+.testcase-details
+{
+  z-index:100;
+  position:fixed;
+  width: 100%;
+  background-color: white;
+  bottom:0px;
+  border-top: 1pt solid;
+  padding-top: 4px;
+}
+.testcase-details .status {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 110%;
+  height: 30px;
+  line-height: 30px;
+}
+#tree-row .totals {
+ font-size: 80%;
+  text-align: right;
+}
